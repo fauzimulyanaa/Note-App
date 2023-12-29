@@ -96,7 +96,7 @@ const NoteTodo = () => {
   return (
     <>
       <div className="conatiner">
-        <nav className=" bg-[#BEADFA] flex justify-between items-center px-7 py-3 w-[94%] m-auto mt-5 rounded-md">
+        <nav className=" bg-[#711DB0] flex justify-between items-center px-7 py-3 w-[94%] m-auto mt-5 rounded-md">
           <div className="search-wrapper">
             <input type="text" placeholder="seacrh note category" className="p-2 w-[300px] rounded-md outline-none " value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
           </div>
@@ -136,7 +136,7 @@ const NoteTodo = () => {
             </>
           ) : (
             <div className="px-10 mt-6 ">
-              <button className="bg-[#A076F9] text-white p-3 text-1xl rounded-md" onClick={handleBtnAddNote}>
+              <button className="bg-[#FFB534] text-white p-3 text-1xl rounded-md" onClick={handleBtnAddNote}>
                 + Add Note
               </button>
             </div>
@@ -168,7 +168,7 @@ const NoteTodo = () => {
                       onChange={(e) => setEditInputTask({ ...editInputTask, note: e.target.value })}
                     />
                   ) : (
-                    <p className="px-3 pt-3 h-[170px] overflow-hidden">{item.note}</p>
+                    <p className="px-3 pt-3 h-[175px] overflow-hidden font-sans font-[300]">{item.note}</p>
                   )}
                   <div className="btn-extra flex gap-3 justify-end pr-3 pt-3 absolute right-0 bottom-[20px]">
                     {editTodo === item.id ? (
